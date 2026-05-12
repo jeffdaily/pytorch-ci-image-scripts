@@ -25,5 +25,3 @@ PyTorch checkout required.
   container setup (from
   [jeffdaily/claude-shared-public](https://github.com/jeffdaily/claude-shared-public))
 - `.vimrc` — copied into the image at `~/.vimrc`
-- `remove_cache.sh` — manual recovery if you need to redo the sccache/cache
-  unwinding inside an existing container
