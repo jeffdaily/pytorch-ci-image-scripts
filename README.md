@@ -15,7 +15,10 @@ in.
 Produces `jeffdaily/pytorch:noble-rocm-7.2-py3-<YYYYMMDD>`. The base image
 `HASH` is the tree SHA of `.ci/docker` on `pytorch/pytorch@main` (equivalent to
 `git rev-parse HEAD:.ci/docker`), fetched live from the GitHub API — no local
-PyTorch checkout required.
+PyTorch checkout required. Since upstream image builds can lag behind git by
+an hour or two, the script walks back recent commits touching `.ci/docker`
+until it finds one with a published image on `ghcr.io/pytorch/ci-image`.
+Override the auto-detection with `HASH=<sha> ./build.sh`.
 
 ## Files
 
