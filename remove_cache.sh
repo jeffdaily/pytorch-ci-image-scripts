@@ -7,5 +7,5 @@ if [[ -d original ]]; then
 fi
 sudo rm -rf original
 popd
-sudo rm -rf /opt/cach
+sudo rm -rf /opt/cache
 
