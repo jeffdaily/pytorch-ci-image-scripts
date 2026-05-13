@@ -83,5 +83,4 @@ fi
 
 echo
 echo "bootstrap: done."
-echo "  Next: git clone https://github.com/OWNER/REPO.git ~/claude-shared"
-echo "        CLAUDE_SHARED_OWNER=OWNER CLAUDE_SHARED_REPO_NAME=REPO ~/claude-shared/install.sh"
+echo "  Next: git clone https://github.com/jeffdaily/claude-shared.git ~/claude-shared"
