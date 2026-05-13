@@ -6,7 +6,7 @@ RUN cd /opt/rocm/llvm/bin && sudo mv original/clang . && sudo mv original/clang+
 RUN sudo rm -rf /opt/cache
 
 # install useful utilities
-RUN sudo apt update && sudo apt install -y less vim gh && rm -rf /var/lib/apt/lists/*
+RUN sudo apt update && sudo apt install -y less vim gh && sudo rm -rf /var/lib/apt/lists/*
 
 # install claude
 RUN curl -fsSL https://claude.ai/install.sh | bash
