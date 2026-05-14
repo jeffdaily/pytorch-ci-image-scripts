@@ -33,3 +33,9 @@ RUN cd /var/lib/jenkins/pytorch && head -n -3 .ci/pytorch/build.sh > tmp.sh && c
 # default pytorch build
 RUN cd /var/lib/jenkins/pytorch && MAX_JOBS= .ci/pytorch/build.sh
 
+# git config
+RUN git config --global user.name "Jeff Daily" && git config --global user.email "jeff.daily@amd.com"
+
+# install uv
+RUN pip install uv
+
